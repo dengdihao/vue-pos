@@ -7,7 +7,7 @@ module.exports = {
 
     publicPath: "../",
     
-    assetsDir:'../',
+    assetsDir:'./',
     // outputDir: 在npm run build时 生成文件的目录 type:string, default:'dist'
 
     outputDir: "./dist",
