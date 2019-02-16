@@ -65,7 +65,9 @@
               </el-tab-pane>
               <el-tab-pane label="小食">
                 <ul class="cookList">
-                  <li v-for="(goods, index) in type1Goods" :key="index">
+                  <li v-for="(goods, index) in type1Goods" 
+                      :key="index"
+                      @click="addOrderList(goods)">
                     <span class="foodImg">
                       <img :src="goods.goodsImg" width="100%">
                     </span>
@@ -76,7 +78,9 @@
               </el-tab-pane>
               <el-tab-pane label="饮料">
                 <ul class="cookList">
-                  <li v-for="(goods, index) in type2Goods" :key="index">
+                  <li v-for="(goods, index) in type2Goods" 
+                      :key="index"
+                      @click="addOrderList(goods)">
                     <span class="foodImg">
                       <img :src="goods.goodsImg" width="100%">
                     </span>
@@ -87,7 +91,9 @@
               </el-tab-pane>
               <el-tab-pane label="套餐">
                 <ul class="cookList">
-                  <li v-for="(goods, index) in type3Goods" :key="index">
+                  <li v-for="(goods, index) in type3Goods" 
+                      :key="index"
+                      @click="addOrderList(goods)">
                     <span class="foodImg">
                       <img :src="goods.goodsImg" width="100%">
                     </span>
